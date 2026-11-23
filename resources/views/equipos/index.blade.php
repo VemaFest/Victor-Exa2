@@ -11,6 +11,8 @@
             <th>Marca</th>
             <th>Adquisicion</th>
             <th>Estado</th>
+            <th>Estado</th>
+
         </tr>
     </thead>
     <tbody>
@@ -22,6 +24,9 @@
             <td>{{ $equipo->marca }}</td>
             <td>{{ $equipo->fecha_adquisicion->format('d/m/Y') }}</td>
             <td>{{ $equipo->estado }}</td>
+            <td>
+                <a href="{{ route('equipos.edit', $equipo->id) }}">Editar</a>
+            </td>
         </tr>
         @empty
         <tr>

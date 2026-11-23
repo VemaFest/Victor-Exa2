@@ -3,7 +3,7 @@
 <h1>Crear equipo</h1>
 <form method="POST" action="{{ route('equipos.store') }}">
     @csrf
-    <label for="codigo">Ingrese el coigo</label>
+    <label for="codigo">Ingrese el codigo</label>
     <input id="codigo" name="codigo" type="text" maxlength="30"
         pattern="[0-9]{30}" value="{{ old('codigo') }}" required>
     <label for="nombre">Nombre</label>
