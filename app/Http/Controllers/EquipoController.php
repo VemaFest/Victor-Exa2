@@ -66,4 +66,12 @@ class EquipoController extends Controller
         ->with('exito', 'Equipo actualizada correctamente.');
     }
 
+    public function destroy(int $id)
+    {
+        $equipo = Equipo::findOrFail($id);
+        $equipo->delete();
+        return redirect()->route('equipos.index')
+            ->with('exito', 'Equipo eliminada correctamente.');
+    }
+
 }
