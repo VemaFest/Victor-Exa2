@@ -6,6 +6,7 @@
         <style>
         .error { color: red; }
         .exito { color: green; }
+        table  { width: 100%; text-align: center; border: gray solid;}
         </style>
     </head>
     <body>
